@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site{
+    display: flex;
+    background: rgb(23,23,23);
+}
+
+.site img {
+    margin-left: 75px;
+}
+
+.menu ul {
+    margin-left: 5px;
+    display: flex;
+}
+
+.menu a{
+    padding: 0 70px;
+    text-decoration: none;
+    
+}
+
+.site nav {
+    margin-top: 22px;
+    margin-left: 90px;
+    
+    
+}
+
+.menu a {
+    color: rgb(212,212,212);
+    background-color: rgb(23,23,23);
+    font-family:'Inter', sans-serif;
+    font-size: 15pt;
+    margin-top: 15px;
+}
+
+.site #redesocial {
+    margin-left: 70px;
+    margin-top: 29px;
+
+    
+}
+.site #redesocial ul{
+    display: flex;
+}
+
+#redesocial a{
+    text-decoration: none;
+    padding: 10px 40px;
+
+}
+
+
+#redesocial a{
+    font-size: 13pt;
+    font-family:'Inter', sans-serif;
+    color: rgb(0,255,209);
+}
+
+.home {
+    background: rgb(23,23,23);
+    
+}
+
+.home h2 {
+    margin-left: 240px;
+    font-family:'Inter', sans-serif;
+}
+
