@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: rgb(23,23,23);
 }
 
 .site{
@@ -36,7 +40,7 @@
 .menu a {
     color: rgb(212,212,212);
     background-color: rgb(23,23,23);
-    font-family:'Inter', sans-serif;
+    
     font-size: 15pt;
     margin-top: 15px;
 }
@@ -60,17 +64,40 @@
 
 #redesocial a{
     font-size: 13pt;
-    font-family:'Inter', sans-serif;
+    
     color: rgb(0,255,209);
 }
 
 .home {
-    background: rgb(23,23,23);
+    display: flex;
     
 }
 
 .home h2 {
-    margin-left: 240px;
-    font-family:'Inter', sans-serif;
+    margin-top: 200px;
+    margin-left: 200px;
+    
+    font-size: 30pt;
 }
 
+#redesocial input{
+    width: 160px;
+    border-radius: 20px;
+    background-color: rgb(42,146,169);
+    color: rgb(0,255,209);
+    font-size: 13pt;
+}
+
+.home img{
+    margin-right: 250px;
+    margin-bottom: 1500px;
+    width: 700px;
+}
+
+.home p{
+    
+    margin-top: 40px;
+    font-size: 15pt;
+    color:  #FFFFFF;
+    padding: 0 15% 30% 20%;
+}
