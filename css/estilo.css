@@ -16,23 +16,22 @@ body{
 }
 
 .site img {
-    margin-left: 75px;
+    margin-left: 20%;
+    z-index: 1000;
 }
 
 .menu ul {
-    margin-left: 5px;
     display: flex;
 }
 
 .menu a{
-    padding: 0 70px;
+    margin-left: 40%;
     text-decoration: none;
     
 }
 
 .site nav {
     margin-top: 22px;
-    margin-left: 90px;
     
     
 }
@@ -46,7 +45,7 @@ body{
 }
 
 .site #redesocial {
-    margin-left: 70px;
+    margin-left: 40%;
     margin-top: 29px;
 
     
