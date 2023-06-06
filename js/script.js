@@ -33,5 +33,14 @@ document.getElementById("mot").addEventListener("mouseover", function( event ) {
 
     document.getElementById("motor").style.border = "1px solid blue";
     document.getElementById("motor").style.padding = "10px 40px 10px 40px";
+    document.getElementById("redesign").style.border = "none";
+    document.getElementById("redesign").style.padding = "none";
 
 })
+
+document.getElementById("red").addEventListener("mouseover", function( event ) {
+    document.getElementById("redesign").style.border = "1px solid blue";
+    document.getElementById("redesign").style.padding = "10px 40px 10px 40px";
+    document.getElementById("motor").style.border = "none";
+    document.getElementById("motor").style.padding = "none";
+});
