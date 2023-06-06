@@ -62,15 +62,22 @@ body{
 #redesocial a{
     text-decoration: none;
     padding: 10px 40px;
-
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 
 #redesocial a{
     font-size: 13pt;
     font-family: 'Poppins','sans-serif';
-    color: rgb(0,255,209);
+    color: white;
     cursor: pointer;
+}
+
+#redesocial a:hover{
+    color: rgb(0,255,209);
+
 }
 
 .home {
@@ -112,13 +119,6 @@ body{
 }
 
 .home input{
-    background-color: rgb(42,146,169);
-    color: whitesmoke;
-    border-radius: 20px;
-    width: 200px;
-    height: 45px;
-    border: 0;
-    text-align: center;
     margin-left: 12%;
     margin-top: 7%;
     font-size: 14pt;
@@ -129,6 +129,13 @@ body{
     margin-left: 20%;
     margin-top: 8%;
 }
+
+.menu a:hover{
+    color: rgb(0,255,209);
+    transform: none(-101%);
+    transition: ease 1.5s;
+}
+
 .serv{
     text-align: center;
 }
@@ -414,6 +421,7 @@ body{
     color: #333;
     border: 2px solid;
     cursor: pointer;
+    height: 30px;
 }
 
 .caixas button:hover{
@@ -429,6 +437,7 @@ body{
     color: #333;
     border: 2px solid;
     cursor: pointer;
+    height: 30px;
 }
 
 .caixasE button:hover{
@@ -452,8 +461,8 @@ body{
 .trabalhos div{
     display: flex;
     margin-left: 5%;
-    margin-top: 2%;
-    border: 1px solid #f2f2f2;
+    margin-top: 1%;
+   
     border-radius: 20px;
 
 }
@@ -461,3 +470,156 @@ body{
 .trabalhos h3{
  color:rgb(0,255,209);
 }
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+.btnAnim {
+    margin-left: 20%;
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+  }
+  
+  .btnAnim:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 gray;
+  };
+  
+  .btnAnim:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 gray;
+  };
+
+  #btnTeste {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  #btnTeste:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  #btnTeste:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+    #btnTeste::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  #btnTeste:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+
+  .btn {
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin: 0rem auto;
+    padding: 0.7rem 3rem;
+    border-radius: 30em;
+    border-style: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    box-shadow: 1px 1px 12px #000000;
+    cursor: pointer;
+  }
+  
+  .btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,255,209);
+    transform: translateX(-101%);
+    transition: all .3s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover {
+    color: #272727;
+    transition: all .3s ease;
+  }
+  
+  .btn:hover::before {
+    transform: translateX(0);
+  }
+
+  .trabalhos h3{
+    cursor: pointer;
+  }
